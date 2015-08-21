@@ -35,7 +35,7 @@ class bla_tprice_oxarticle extends bla_tprice_oxarticle_parent
     public function getTPriceType()
     {
         // UVP, ehemaliger UVP, unser alter Preis, regulärer preis (+ der neue Einführungspreis)
-        if($this->oxarticles__blatpricetype->value == '') return "REDUCED_FROM_2";
+        if($this->oxarticles__blatpricetype->value == '') return "BLA_TPRICE_OLD";
         return "BLA_TPRICE_".$this->oxarticles__blatpricetype->value;
     }
 }

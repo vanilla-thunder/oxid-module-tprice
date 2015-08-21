@@ -17,11 +17,11 @@
 $sLangName = 'Deutsch';
 $aLang     = array(
     'charset'                    => 'UTF-8',
+    'BLA_TPRICE_OLD'             => 'unser alter Preis',
     'BLA_TPRICE_RRP'             => 'UVP des Herstellers',
     'BLA_TPRICE_EXRRP'           => 'ehememalige UVP',
-    'BLA_TPRICE_OLD'             => 'alter Preis',
-    'BLA_TPRICE_REGULAR'         => 'regulärer Preis',
-    'BLA_TPRICE_INTRO'           => 'regulärer Preis',
+    'BLA_TPRICE_REGULAR'         => 'unser regulärer Preis',
+    'BLA_TPRICE_INTRO'           => 'unser regulärer Preis',
     'BLA_TPRICE_OFFER_LIMITED'   => 'Dieses Angebot ist zeitlich begrenzt!',
     'BLA_TPRICE_YOU_SAVE'        => 'Sie sparen',
     'BLA_TPRICE_UP_TO'           => 'bis zu',
