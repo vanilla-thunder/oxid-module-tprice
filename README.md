@@ -1,15 +1,16 @@
-## [bla] TinyMCE for OXID eShop 4.7 & 4.8
-#### raw module branch, also contains development files
+## [bla] enhanced TPrice for OXID eShop
+
+you can set TPrice to be displayed as:
+* RRP
+* expired RRP
+* old price
+* regular price
+* regular price + new price is the introduction price & limited offer
+ 
+also this module can calculate absolute and percentage savings against tprice
 
 ### installation
-* navigate into modules/ directory of your shop
-* $ git clone https://github.com/vanilla-thunder/bla.git
-* $ cd bla
-* $ git clone -b module https://github.com/vanilla-thunder/bla-tinymce.git
-
-
-### development / updating (node.js required)
-* nagivate into bla-tinymce/ directory
-* $ npm install
-* $ node update.js- will update tinymce and language files
-* $ node update.js version 1.5 - will get new update.jpg for version 1.5
+* $ cd modules/ 
+* $ mkidir bla && cd bla
+* $ wget https://raw.githubusercontent.com/vanilla-thunder/bla/master/vendormetadata.php
+* $ git clone -b module https://github.com/vanilla-thunder/bla-tprice.git
