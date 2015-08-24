@@ -21,7 +21,7 @@ $aModule          = array(
     'id'          => 'bla-tprice',
     'title'       => '<strong style="color:#95b900;font-size:125%;">best</strong><strong style="color:#c4ca77;font-size:125%;">life</strong> <strong>enhanced TPrice</strong>',
     'description' => ''
-        . '<hr/><b style="display: inline-block; float:left;">newest version:</b><img src="' . $v . '" style=" float:left;"/><a style="display: inline-block; padding: 1px 25px; background: dodgerblue;  border: 1px solid #585858; color: white;" href="http://bit.ly/bla-TinyMCE" target="_blank">info</a>&nbsp;<a style="display: inline-block; padding: 1px 25px; background: forestgreen; border: 1px solid #585858; color: white;" href="https://github.com/vanilla-thunder/bla-tprice/archive/master.zip">download</a>',
+        . '<hr/><b style="display: inline-block; float:left;">newest version:</b><img src="' . $v . '" style=" float:left;"/><a style="display: inline-block; padding: 1px 25px; background: dodgerblue;  border: 1px solid #585858; color: white;" href="https://github.com/vanilla-thunder/bla-tprice" target="_blank">info</a>&nbsp;<a style="display: inline-block; padding: 1px 25px; background: forestgreen; border: 1px solid #585858; color: white;" href="https://github.com/vanilla-thunder/bla-tprice/archive/master.zip">download</a>',
     'thumbnail'   => 'thumbnail.png',
     'version'     => '0.1.0 (2015-08-20)',
     'author'      => 'Marat Bedoev, bestlife AG',
