@@ -22,6 +22,7 @@ $aLang     = array(
     'BLA_TPRICE_EXRRP'           => 'ehememalige UVP',
     'BLA_TPRICE_REGULAR'         => 'unser regulärer Preis',
     'BLA_TPRICE_INTRO'           => 'unser regulärer Preis',
+    'BLA_TPRICE_INTRODUCTION_PRICE' => 'Einführungspreis',
     'BLA_TPRICE_OFFER_LIMITED'   => 'Dieses Angebot ist zeitlich begrenzt!',
     'BLA_TPRICE_YOU_SAVE'        => 'Sie sparen',
     'BLA_TPRICE_UP_TO'           => 'bis zu',
