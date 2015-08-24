@@ -1,5 +1,7 @@
 ## bestlife AG - enhanced TPrice for OXID eShop
-### module version 0.1.0
+### module version 0.1.10
+
+### more info here: http://marat.ws/bla-tprice/
 
 you can set TPrice to be displayed as:
 * RRP
