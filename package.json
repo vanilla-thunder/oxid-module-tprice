@@ -1,0 +1,21 @@
+{
+  "name": "bla-tprice-dev",
+  "version": "0.1.0",
+  "description": "enhanced TPrice for OXID eShop CE",
+  "author": "Marat Bedoev, bestlife AG <oxid@bestlife.ag>",
+  "license": "GPLv3",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vanilla-thunder/bla-tprice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vanilla-thunder/bla-tprice/issues"
+  },
+  "keywords": [
+    "tprice",
+    "oxid"
+  ],
+  "dependencies": {
+    "replace": "*"
+  }
+}
