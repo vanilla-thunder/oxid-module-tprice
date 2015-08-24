@@ -16,6 +16,7 @@
     "oxid"
   ],
   "dependencies": {
-    "replace": "*"
+    "replace": "*",
+    "request": "*"
   }
 }

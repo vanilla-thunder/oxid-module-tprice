@@ -1,4 +1,5 @@
 var fs = require('fs'),
+    r = require("request"),
     replace = require('replace'),
     runner = require('child_process');
 
