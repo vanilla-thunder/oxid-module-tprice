@@ -1,6 +1,8 @@
 ## ###_COMPANY_### - ###_MODULE_###
 ### module version ###_VERSION_###
 
+### more info here: http://marat.ws/bla-tprice/
+
 you can set TPrice to be displayed as:
 * RRP
 * expired RRP
