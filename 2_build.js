@@ -80,6 +80,7 @@ process.on('exit', function (code) {
     console.log("     replacing complete");
     // copy module to master
     shell("cp -r _module _master/copy_this/modules/bla/bla-tprice");
+    shell("rm -rf _master/copy_this/modules/bla/bla-tprice/.git");
     shell("cp _module/README.md _master/README.md");
     console.log("");
     console.log("     build complete! made my day!");
