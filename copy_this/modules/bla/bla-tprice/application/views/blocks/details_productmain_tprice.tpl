@@ -1,13 +1,23 @@
 [{if $oDetailsProduct->getTPrice()}]
     [{assign var="oTPrice" value=$oDetailsProduct->getTPrice()}]
-    <div class="alert-box success radius">
-        <i class="fa fa-hand-o-down fa-3x fa-fw right"></i>
-        <span class="h4">[{oxmultilang ident="REDUCED_FROM"}] [{oxprice price=$oDetailsProduct->getTPrice() currency=$currency}]</span>
-        <br/>
-        (<small>[{oxmultilang ident=$oDetailsProduct->getTPriceType()}]</small>)<br/>
-        [{if $oDetailsProduct->isParentNotBuyable() && $oDetailsProduct->isRangePrice() }][{oxmultilang ident="BLA_TPRICE_UP_TO"}] [{/if}]
-        [{oxmultilang ident="BLA_TPRICE_PERCENT_CHEAPER" args=$oDetailsProduct->getSavingPercent()}]
+    <div class="status success">
+        <p>
+        <h4>
+            [{if $oDetailsProduct->isParentNotBuyable() && $oDetailsProduct->isRangePrice() }][{oxmultilang ident="BLA_TPRICE_UP_TO"}] [{/if}]
+            [{oxmultilang ident="BLA_TPRICE_PERCENT_CHEAPER" args=$oDetailsProduct->getSavingPercent()}]
+        </h4>
+        [{oxmultilang ident="REDUCED_FROM"}] [{oxprice price=$oDetailsProduct->getTPrice() currency=$currency}] * 
+        <small>([{oxmultilang ident=$oDetailsProduct->getTPriceType()}])</small>
+        [{if $oDetailsProduct->getTPriceType() == 'BLA_TPRICE_INTRO'}]<br/><b style="color:orange;">[{oxmultilang ident="BLA_TPRICE_OFFER_LIMITED"}]</b>[{/if}]
+        </p>
     </div>
-    [{if $oDetailsProduct->getTPriceType() == 'BLA_TPRICE_INTRO'}]<div class="alert text-center"><small><b>[{oxmultilang ident="BLA_TPRICE_OFFER_LIMITED"}]</b></small></div>[{/if}]
+    [{if $oDetailsProduct->getTPriceType() == 'BLA_TPRICE_INTRO'}]
+    <div>
+        
+        <h2 style="color:limegreen;">
+            [{oxmultilang ident="BLA_TPRICE_INTRODUCTION_PRICE" suffix="COLON"}]
+        </h2>
+    </div>
+    [{/if}]
 [{/if}]
 
