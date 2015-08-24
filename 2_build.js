@@ -28,8 +28,8 @@ console.log("     cleanup finished");
 r('http://dev.marat.ws/v/?raw=1&v=' + version).pipe(fs.createWriteStream('_module/version.jpg', true));
 
 // copy files
-shell("cp -r core _module/application");
-shell("cp -r tinymce _module/extend");
+shell("cp -r application _module/application");
+shell("cp -r extend _module/extend");
 shell("cp metadata.php _module/metadata.php");
 shell("cp README.md _module/README.md");
 console.log("     new files copied");
