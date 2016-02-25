@@ -2,7 +2,7 @@
 
 /**
  * bestlife AG - enhanced presentation for TPrice (recommended retail price / old price) in OXID eShop
- * Copyright (C) 2015  bestlife AG
+ * Copyright (C) 2016  bestlife AG
  * info:  oxid@bestlife.ag
  *
  * This program is free software;
@@ -34,7 +34,7 @@ class bla_tprice_oxarticle extends bla_tprice_oxarticle_parent
 
     public function getTPriceType()
     {
-        // UVP, ehemaliger UVP, unser alter Preis, regulärer preis (+ der neue Einführungspreis)
+        // UVP, ehemaliger UVP, unser alter Preis, regulï¿½rer preis (+ der neue Einfï¿½hrungspreis)
         if($this->oxarticles__blatpricetype->value == '') return "BLA_TPRICE_OLD";
         return "BLA_TPRICE_".$this->oxarticles__blatpricetype->value;
     }

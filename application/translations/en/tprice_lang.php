@@ -2,7 +2,7 @@
 
 /**
  * bestlife AG - enhanced presentation for TPrice (recommended retail price / old price) in OXID eShop
- * Copyright (C) 2016  bestlife AG
+ * Copyright (C) 2015  bestlife AG
  * info:  oxid@bestlife.ag
  *
  * This program is free software;
@@ -17,11 +17,14 @@
 $sLangName = 'Deutsch';
 $aLang     = array(
     'charset'                    => 'UTF-8',
-    'ARTICLE_EXTEND_TPRICE'      => 'Statt-Preis',
-    'BLA_TPRICE_OLD'             => 'alter Preis',
-    'HELP_ARTICLE_EXTEND_BPRICE' => 'bei "Einführungspreis" wird der aktuelle Preis als Einführungspreis definiert und der Statt-Preis als "regulärer Preis"',
-    'BLA_TPRICE_REGULAR'         => 'regulärer Preis',
-    'BLA_TPRICE_INTRO'           => 'Einführungspreis',
-    'BLA_TPRICE_RRP'             => 'UVP',
-    'BLA_TPRICE_EXRRP'           => 'ehem. UVP'
+    'BLA_TPRICE_OLD'             => 'former price',
+    'BLA_TPRICE_RRP'             => 'list price',
+    'BLA_TPRICE_EXRRP'           => 'former list price',
+    'BLA_TPRICE_REGULAR'         => 'regular price',
+    'BLA_TPRICE_INTRO'           => 'regular price',
+    'BLA_TPRICE_INTRODUCTION_PRICE' => 'Introductroy Price',
+    'BLA_TPRICE_OFFER_LIMITED'   => 'Limited time offer!',
+    'BLA_TPRICE_YOU_SAVE'        => 'You save',
+    'BLA_TPRICE_UP_TO'           => 'up to',
+    'BLA_TPRICE_PERCENT_CHEAPER' => '%s%% cheaper',
 );

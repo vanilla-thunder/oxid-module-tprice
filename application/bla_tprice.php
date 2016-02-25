@@ -2,7 +2,7 @@
 
 /**
  * bestlife AG - enhanced presentation for TPrice (recommended retail price / old price) in OXID eShop
- * Copyright (C) 2015  bestlife AG
+ * Copyright (C) 2016  bestlife AG
  * info:  oxid@bestlife.ag
  *
  * This program is free software;
