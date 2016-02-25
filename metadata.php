@@ -2,7 +2,7 @@
 
 /**
  * bestlife AG - enhanced presentation for TPrice (recommended retail price / old price) in OXID eShop
- * Copyright (C) 2015  bestlife AG
+ * Copyright (C) 2016  bestlife AG
  * info:  oxid@bestlife.ag
  *
  * This program is free software;
@@ -23,7 +23,7 @@ $aModule          = array(
     'description' => ''
         . '<hr/><b style="display: inline-block; float:left;">newest version:</b><img src="' . $v . '" style=" float:left;"/><a style="display: inline-block; padding: 1px 25px; background: dodgerblue;  border: 1px solid #585858; color: white;" href="https://github.com/vanilla-thunder/bla-tprice" target="_blank">info</a>&nbsp;<a style="display: inline-block; padding: 1px 25px; background: forestgreen; border: 1px solid #585858; color: white;" href="https://github.com/vanilla-thunder/bla-tprice/archive/master.zip">download</a>',
     'thumbnail'   => 'thumbnail.png',
-    'version'     => '0.1.0 (2015-08-20)',
+    'version'     => '1.0.0 (2016-02-25)',
     'author'      => 'Marat Bedoev, bestlife AG',
     'email'       => 'oxid@bestlife.ag',
     'url'         => 'http://www.bestlife.ag',

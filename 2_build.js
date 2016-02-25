@@ -13,9 +13,11 @@ var shell = function (command) {
     );
 };
 
-
 var version = process.argv[2];
-if (!version) process.exit(9);
+if (!version) {
+    console.log('hallo bitte!!! Version???')
+    process.exit(9);
+}
 
 // cleanup
 shell("rm -rf _module/application");
@@ -25,7 +27,7 @@ console.log("");
 console.log("     cleanup finished");
 
 // oxversion
-r('http://dev.marat.ws/v/?raw=1&v=' + version).pipe(fs.createWriteStream('_module/version.jpg', true));
+r('http://mb-dev.de/v/?raw=1&v=' + version).pipe(fs.createWriteStream('_module/version.jpg'));
 
 // copy files
 shell("cp -r application _module/application");
@@ -38,7 +40,7 @@ console.log("     new files copied");
 var module = 'enhanced TPrice for OXID eShop',
     company = 'bestlife AG',
     email = 'oxid@bestlife.ag',
-    year = '2015';
+    year = '2016';
 
 replace({
     regex: "###_MODULE_###",

@@ -1,18 +1,22 @@
 ## ###_COMPANY_### - ###_MODULE_###
-### module version ###_VERSION_###
+### Modul Version ###_VERSION_###
 
-### more info here: http://marat.ws/bla-tprice/
+### eine Detailierte Beschreibung mit Bildern gibts hier: https://marat.ws/der-bessere-uvp-preis-fur-oxid-eshop/
 
-you can set TPrice to be displayed as:
-* RRP
-* expired RRP
-* old price
-* regular price
-* regular price + new price is the introduction price & limited offer
+Mit diesem Modul können Sie für jedem Artikel die Überschrift beim UVP Preis ändern.
+* UVP des Herstellers
+* ehem. UVP
+* unser alter Preis
+* regulärer Preis
+* regulärer Preis + der aktuelle Preis wird als "Einführungspreis" hervorgehoben
  
-also this module can calculate absolute and percentage savings against tprice
+Sie können ebenfalls prezentuale als auch absolute Ersparnis gegenüber dem UVP Preis anzeigen lassen.
 
-### installation
+### Installation
+* [https://github.com/vanilla-thunder/bla-tprice/archive/master.zip](https://github.com/vanilla-thunder/bla-tprice/archive/master.zip) herunterladen und entpacken
+* Inhalt von "copy_this" in den Shop hochladen
+
+**oder:**
 * $ cd modules/ 
 * $ mkidir bla && cd bla
 * $ wget https://raw.githubusercontent.com/vanilla-thunder/bla/master/vendormetadata.php
