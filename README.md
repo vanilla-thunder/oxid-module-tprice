@@ -1,5 +1,5 @@
 ## bestlife AG - enhanced TPrice for OXID eShop
-### module version 0.1.10
+### module version 1.0.0
 
 ### more info here: http://marat.ws/bla-tprice/
 
@@ -20,7 +20,7 @@ also this module can calculate absolute and percentage savings against tprice
 
 ### LICENSE AGREEMENT
    bestlife AG - enhanced TPrice for OXID eShop  
-   Copyright (C) 2015  bestlife AG  
+   Copyright (C) 2016  bestlife AG  
    info:  oxid@bestlife.ag  
   
    This program is free software;  
