@@ -1,7 +1,7 @@
 ## bestlife AG - enhanced TPrice for OXID eShop
 ### Modul Version 1.0.0
 
-### eine Detailierte Beschreibung mit Bildern gibts hier: https://marat.ws/der-bessere-uvp-preis-fur-oxid-eshop/
+### Beschreibung mit Bildern gibts hier: https://marat.ws/der-bessere-uvp-preis-fur-oxid-eshop/
 
 Mit diesem Modul können Sie für jedem Artikel die Überschrift beim UVP Preis ändern.
 * UVP des Herstellers
