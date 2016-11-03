@@ -1,6 +1,9 @@
 ## bestlife AG - enhanced TPrice for OXID eShop
 ### Modul Version 1.0.0
 
+# Achtung! "unser alter Preis" darf maximal 3 Monate nach der Preisreduzierung verwendet werden. Infos gibts hier:
+http://www.justiz.nrw.de/nrwe/lgs/bochum/lg_bochum/j2016/I_14_O_3_16_Urteil_20160324.html
+
 ### Beschreibung mit Bildern gibts hier: https://marat.ws/der-bessere-uvp-preis-fur-oxid-eshop/
 
 Mit diesem Modul können Sie für jedem Artikel die Überschrift beim UVP Preis ändern.
