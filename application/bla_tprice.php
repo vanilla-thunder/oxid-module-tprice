@@ -1,8 +1,8 @@
 <?php
 
 /**
- * bestlife AG - enhanced presentation for TPrice (recommended retail price / old price) in OXID eShop
- * Copyright (C) 2016  bestlife AG
+ * enhanced TPrice for OXID eShop CE
+ * Copyright (C) 2017  bestlife AG
  * info:  oxid@bestlife.ag
  *
  * This program is free software;
@@ -12,7 +12,10 @@
  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License along with this program; if not, see <http://www.gnu.org/licenses/>
+ *
+ * author: Marat Bedoev
  */
+
 class bla_tprice extends oxSuperCfg
 {
     public static function install()
