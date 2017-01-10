@@ -1,5 +1,5 @@
 var fs = require('fs'),
-    r = require("request"),
+    p = require('./package.json'),
     replace = require('replace'),
     runner = require('child_process');
 
@@ -13,11 +13,7 @@ var shell = function (command) {
     );
 };
 
-var version = process.argv[2];
-if (!version) {
-    console.log('hallo bitte!!! Version???')
-    process.exit(9);
-}
+
 
 // cleanup
 shell("rm -rf _module/application");
@@ -27,7 +23,7 @@ console.log("");
 console.log("     cleanup finished");
 
 // oxversion
-r('http://mb-dev.de/v/?raw=1&v=' + version).pipe(fs.createWriteStream('_module/version.jpg'));
+//r('http://mb-dev.de/v/?raw=1&v=' + version).pipe(fs.createWriteStream('_module/version.jpg'));
 
 // copy files
 shell("cp -r application _module/application");
@@ -42,41 +38,25 @@ var module = 'enhanced TPrice for OXID eShop',
     email = 'oxid@bestlife.ag',
     year = '2016';
 
-replace({
-    regex: "###_MODULE_###",
-    replacement: module,
-    paths: ['./_module'],
-    recursive: true,
-    silent: true
-});
-replace({
-    regex: "###_VERSION_###",
-    replacement: version,
-    paths: ['./_module'],
-    recursive: true,
-    silent: true
-});
-replace({
-    regex: "###_COMPANY_###",
-    replacement: company,
-    paths: ['./_module'],
-    recursive: true,
-    silent: true
-});
-replace({
-    regex: "###_EMAIL_###",
-    replacement: email,
-    paths: ['./_module'],
-    recursive: true,
-    silent: true
-});
-replace({
-    regex: "###_YEAR_###",
-    replacement: year,
-    paths: ['./_module'],
-    recursive: true,
-    silent: true
-});
+var replaces = {
+    'MODULE': p.description,
+    'VERSION': p.version+' '+new Date().toLocaleDateString(),
+    'AUTHOR': p.author,
+    'COMPANY': p.company,
+    'EMAIL': p.email,
+    'URL': p.url,
+    'YEAR': new Date().getFullYear()
+};
+for(var x in replaces)
+{
+    replace({
+        regex: "___"+x+"___",
+        replacement: replaces[x],
+        paths: ['./_module'],
+        recursive: true,
+        silent: true
+    });
+}
 
 process.on('exit', function (code) {
     console.log("     replacing complete");

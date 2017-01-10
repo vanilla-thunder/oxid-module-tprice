@@ -1,5 +1,5 @@
-## ###_COMPANY_### - ###_MODULE_###
-### Modul Version ###_VERSION_###
+## ___MODULE___
+Version ___VERSION___
 
 ### Beschreibung mit Bildern gibts hier: https://marat.ws/der-bessere-uvp-preis-fur-oxid-eshop/
 
@@ -10,7 +10,8 @@ Mit diesem Modul können Sie für jedem Artikel die Überschrift beim UVP Preis 
 * regulärer Preis
 * regulärer Preis + der aktuelle Preis wird als "Einführungspreis" hervorgehoben
  
-Sie können ebenfalls prezentuale als auch absolute Ersparnis gegenüber dem UVP Preis anzeigen lassen.
+Sie können ebenfalls prezentuale als auch absolute Ersparnis gegenüber dem UVP Preis anzeigen lassen.  
+Zusätzlich dazu wird der UVP Preis vom Vaterartikel genommen, sofern dieser über dem Preis der Variante liegt.
 
 ### Installation
 * [https://github.com/vanilla-thunder/bla-tprice/archive/master.zip](https://github.com/vanilla-thunder/bla-tprice/archive/master.zip) herunterladen und entpacken
@@ -22,10 +23,10 @@ Sie können ebenfalls prezentuale als auch absolute Ersparnis gegenüber dem UVP
 * $ wget https://raw.githubusercontent.com/vanilla-thunder/bla/master/vendormetadata.php
 * $ git clone -b module https://github.com/vanilla-thunder/bla-tprice.git
 
-### LICENSE AGREEMENT
-   ###_COMPANY_### - ###_MODULE_###  
-   Copyright (C) ###_YEAR_###  ###_COMPANY_###  
-   info:  ###_EMAIL_###  
+### LICENSE AGREEMENT  
+   ___MODULE___  
+   Copyright (C) ___YEAR___  ___COMPANY___  
+   info:  ___EMAIL___  
   
    This program is free software;  
    you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation;
