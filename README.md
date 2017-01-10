@@ -1,8 +1,5 @@
-## bestlife AG - enhanced TPrice for OXID eShop
-### Modul Version 1.0.0
-
-# Achtung! "unser alter Preis" darf maximal 3 Monate nach der Preisreduzierung verwendet werden. Infos gibts hier:
-http://www.justiz.nrw.de/nrwe/lgs/bochum/lg_bochum/j2016/I_14_O_3_16_Urteil_20160324.html
+## enhanced TPrice for OXID eShop CE
+Version 0.1.1 2017-1-10
 
 ### Beschreibung mit Bildern gibts hier: https://marat.ws/der-bessere-uvp-preis-fur-oxid-eshop/
 
@@ -13,7 +10,8 @@ Mit diesem Modul können Sie für jedem Artikel die Überschrift beim UVP Preis 
 * regulärer Preis
 * regulärer Preis + der aktuelle Preis wird als "Einführungspreis" hervorgehoben
  
-Sie können ebenfalls prezentuale als auch absolute Ersparnis gegenüber dem UVP Preis anzeigen lassen.
+Sie können ebenfalls prezentuale als auch absolute Ersparnis gegenüber dem UVP Preis anzeigen lassen.  
+Zusätzlich dazu wird der UVP Preis vom Vaterartikel genommen, sofern dieser über dem Preis der Variante liegt.
 
 ### Installation
 * [https://github.com/vanilla-thunder/bla-tprice/archive/master.zip](https://github.com/vanilla-thunder/bla-tprice/archive/master.zip) herunterladen und entpacken
@@ -25,9 +23,9 @@ Sie können ebenfalls prezentuale als auch absolute Ersparnis gegenüber dem UVP
 * $ wget https://raw.githubusercontent.com/vanilla-thunder/bla/master/vendormetadata.php
 * $ git clone -b module https://github.com/vanilla-thunder/bla-tprice.git
 
-### LICENSE AGREEMENT
-   bestlife AG - enhanced TPrice for OXID eShop  
-   Copyright (C) 2016  bestlife AG  
+### LICENSE AGREEMENT  
+   enhanced TPrice for OXID eShop CE  
+   Copyright (C) 2017  bestlife AG  
    info:  oxid@bestlife.ag  
   
    This program is free software;  
