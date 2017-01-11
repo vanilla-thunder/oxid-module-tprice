@@ -22,7 +22,7 @@ $aModule          = array(
     'title'       => '<strong style="color:#95b900;font-size:125%;">best</strong><strong style="color:#c4ca77;font-size:125%;">life</strong> <strong>enhanced TPrice</strong>',
     'description' => 'Erweiterte Einstellungen für den UVP Preis',
     'thumbnail'   => 'bestlife.png',
-    'version'     => '0.1.1 2017-1-10',
+    'version'     => '0.1.1 2017-1-11',
     'author'      => 'Marat Bedoev, bestlife AG',
     'email'       => 'oxid@bestlife.ag',
     'url'         => 'https://github.com/vanilla-thunder/bla-tprice',

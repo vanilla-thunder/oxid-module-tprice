@@ -20,13 +20,14 @@ class bla_tprice_oxarticle extends bla_tprice_oxarticle_parent
 {
     public function getTPrice()
     {
-        if($oTPrice = parent::getTPrice()) return $oTPrice;
-        else if ($this->getParentArticle() && $oParentTPrice = $this->getParentArticle()->getTPrice()) return $oParentTPrice;
-        else return;
+        if(!parent::getTPrice() && $this->getParentArticle()) return $this->getParentArticle()->getTPrice();
+        else return parent::getTPrice();
     }
 
     public function getSaving()
     {
+        if(!$this->getTPrice()) return false;
+
         $dPrice = ($this->isParentNotBuyable()) ? $this->getVarMinPrice()->getPrice() : $this->getPrice()->getPrice();
         $oPrice = clone $this->getTPrice();
         $oPrice->subtract($dPrice);
@@ -36,6 +37,8 @@ class bla_tprice_oxarticle extends bla_tprice_oxarticle_parent
 
     public function getSavingPercent()
     {
+        if(!$this->getTPrice()) return false;
+
         $saving = $this->getSaving()->getPrice();
         $price = $this->getTPrice()->getPrice();
         return number_format($saving / $price * 100,1,',','.');

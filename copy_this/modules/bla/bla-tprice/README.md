@@ -1,5 +1,5 @@
 ## enhanced TPrice for OXID eShop CE
-Version 0.1.1 2017-1-10
+Version 0.1.1 2017-1-11
 
 ### Beschreibung mit Bildern gibts hier: https://marat.ws/der-bessere-uvp-preis-fur-oxid-eshop/
 
