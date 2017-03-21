@@ -33,11 +33,6 @@ shell("cp README.md _module/README.md");
 console.log("     new files copied");
 
 // compile some files
-var module = 'enhanced TPrice for OXID eShop',
-    company = 'bestlife AG',
-    email = 'oxid@bestlife.ag',
-    year = '2016';
-
 var replaces = {
     'MODULE': p.description,
     'VERSION': p.version+' '+new Date().toLocaleDateString(),
@@ -47,6 +42,7 @@ var replaces = {
     'URL': p.url,
     'YEAR': new Date().getFullYear()
 };
+
 for(var x in replaces)
 {
     replace({

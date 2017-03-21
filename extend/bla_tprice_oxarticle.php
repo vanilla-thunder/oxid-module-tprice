@@ -15,18 +15,25 @@
  *
  * author: ___AUTHOR___
  */
-
 class bla_tprice_oxarticle extends bla_tprice_oxarticle_parent
 {
     public function getTPrice()
     {
-        if(!parent::getTPrice() && $this->getParentArticle()) return $this->getParentArticle()->getTPrice();
+        if (!parent::getTPrice() && $this->getParentArticle()) return $this->getParentArticle()->getTPrice();
         else return parent::getTPrice();
+    }
+
+    public function getTPriceType()
+    {
+        // UVP, ehemaliger UVP, unser alter Preis, regulärer preis (+ der neue Einführungspreis)
+        if ($this->oxarticles__blatpricetype->value == '') return "BLA_TPRICE_OLD";
+
+        return "BLA_TPRICE_" . $this->oxarticles__blatpricetype->value;
     }
 
     public function getSaving()
     {
-        if(!$this->getTPrice()) return false;
+        if (!$this->getTPrice()) return false;
 
         $dPrice = ($this->isParentNotBuyable()) ? $this->getVarMinPrice()->getPrice() : $this->getPrice()->getPrice();
         $oPrice = clone $this->getTPrice();
@@ -37,17 +44,20 @@ class bla_tprice_oxarticle extends bla_tprice_oxarticle_parent
 
     public function getSavingPercent()
     {
-        if(!$this->getTPrice()) return false;
+        if (!$this->getTPrice()) return false;
 
         $saving = $this->getSaving()->getPrice();
         $price = $this->getTPrice()->getPrice();
-        return number_format($saving / $price * 100,1,',','.');
+
+        return number_format($saving / $price * 100, 1, ',', '.');
     }
 
-    public function getTPriceType()
+    // return only future delviery dates
+    public function getDeliveryDate($force = false)
     {
-        // UVP, ehemaliger UVP, unser alter Preis, regulärer preis (+ der neue Einführungspreis)
-        if($this->oxarticles__blatpricetype->value == '') return "BLA_TPRICE_OLD";
-        return "BLA_TPRICE_".$this->oxarticles__blatpricetype->value;
+        if ($this->oxarticles__oxdelivery->value != '0000-00-00' && ($force || $this->oxarticles__oxdelivery->value > date('Y-m-d')))
+            return oxRegistry::get("oxUtilsDate")->formatDBDate($this->oxarticles__oxdelivery->value);
+
+        return false;
     }
 }

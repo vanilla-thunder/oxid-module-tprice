@@ -19,7 +19,7 @@
 $sMetadataVersion = '1.1';
 $aModule          = array(
     'id'          => 'bla-tprice',
-    'title'       => '<strong style="color:#95b900;font-size:125%;">best</strong><strong style="color:#c4ca77;font-size:125%;">life</strong> <strong>enhanced TPrice</strong>',
+    'title'       => '<strong style="color:#95b900;font-size:125%;">best</strong><strong style="color:#c4ca77;font-size:125%;">life</strong> <strong>TPrice</strong>',
     'description' => 'Erweiterte Einstellungen für den UVP Preis',
     'thumbnail'   => 'bestlife.png',
     'version'     => '___VERSION___',
