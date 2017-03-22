@@ -1,7 +1,7 @@
 <?php
 
 /**
- * enhanced TPrice for OXID eShop CE
+ * [bla] bla-tprice - enhanced TPrice for OXID eShop CE
  * Copyright (C) 2017  bestlife AG
  * info:  oxid@bestlife.ag
  *
@@ -20,10 +20,10 @@ $sMetadataVersion = '1.1';
 $aModule          = array(
     'id'          => 'bla-tprice',
     'title'       => '<strong style="color:#95b900;font-size:125%;">best</strong><strong style="color:#c4ca77;font-size:125%;">life</strong> <strong>TPrice</strong>',
-    'description' => 'Erweiterte Einstellungen für den UVP Preis',
     'thumbnail'   => 'bestlife.png',
-    'version'     => '0.1.1 2017-1-11',
-    'author'      => 'Marat Bedoev, bestlife AG',
+    'description' => 'enhanced TPrice for OXID eShop CE',
+    'version'     => '0.1.3 2017-3-22',
+    'author'      => 'Marat Bedoev',
     'email'       => 'oxid@bestlife.ag',
     'url'         => 'https://github.com/vanilla-thunder/bla-tprice',
     'extend'      => array(

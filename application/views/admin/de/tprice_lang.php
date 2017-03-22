@@ -1,7 +1,7 @@
 <?php
 
 /**
- * enhanced TPrice for OXID eShop CE
+ * [bla] bla-tprice - enhanced TPrice for OXID eShop CE
  * Copyright (C) 2017  bestlife AG
  * info:  oxid@bestlife.ag
  *
