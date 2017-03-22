@@ -1,13 +1,14 @@
-var runner = require('child_process');
+var runner = require('child_process'),
+    p = require('./package.json');
 
-runner.exec("git clone --depth 1 git@github.com:vanilla-thunder/bla-tprice.git _master",
+r.exec("git clone " + p.repository.url.replace('https://','git@') + ".git _master --depth 1",
     function (err, stdout, stderr) {
         if(err) console.log(err);
         else if(stderr) console.log(stderr);
         else console.log("master ok");
     }
 );
-runner.exec("git clone -b module git@github.com:vanilla-thunder/bla-tprice.git _module --depth 1",
+runner.exec("git clone -b module " + p.repository.url.replace('https://','git@') + ".git _module --depth 1",
     function (err, stdout, stderr) {
         if(err) console.log(err);
         else if(stderr) console.log(stderr);

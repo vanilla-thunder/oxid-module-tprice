@@ -1,7 +1,7 @@
 <?php
 
 /**
- * ___MODULE___
+ * [___VENDOR___] ___NAME___ - ___MODULE___
  * Copyright (C) ___YEAR___  ___COMPANY___
  * info:  ___EMAIL___
  *
@@ -20,10 +20,10 @@ $sMetadataVersion = '1.1';
 $aModule          = array(
     'id'          => 'bla-tprice',
     'title'       => '<strong style="color:#95b900;font-size:125%;">best</strong><strong style="color:#c4ca77;font-size:125%;">life</strong> <strong>TPrice</strong>',
-    'description' => 'Erweiterte Einstellungen für den UVP Preis',
     'thumbnail'   => 'bestlife.png',
+    'description' => '___MODULE___',
     'version'     => '___VERSION___',
-    'author'      => '___AUTHOR___, ___COMPANY___',
+    'author'      => '___AUTHOR___',
     'email'       => '___EMAIL___',
     'url'         => '___URL___',
     'extend'      => array(

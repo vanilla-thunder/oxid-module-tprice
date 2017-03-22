@@ -1,7 +1,7 @@
 <?php
 
 /**
- * ___MODULE___
+ * [___VENDOR___] ___NAME___ - ___MODULE___
  * Copyright (C) ___YEAR___  ___COMPANY___
  * info:  ___EMAIL___
  *

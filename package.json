@@ -1,7 +1,8 @@
 {
-  "name": "bla-tprice-dev",
-  "version": "0.1.2",
+  "name": "bla-tprice",
+  "version": "0.1.3",
   "description": "enhanced TPrice for OXID eShop CE",
+  "vendor":"bla",
   "author": "Marat Bedoev",
   "company": "bestlife AG",
   "email": "oxid@bestlife.ag",

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * ___MODULE___
+ * [___VENDOR___] ___NAME___ - ___MODULE___
  * Copyright (C) ___YEAR___  ___COMPANY___
  * info:  ___EMAIL___
  *
@@ -15,6 +15,7 @@
  *
  * author: ___AUTHOR___
  */
+
 class bla_tprice_oxarticle extends bla_tprice_oxarticle_parent
 {
     public function getTPrice()

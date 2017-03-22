@@ -13,29 +13,27 @@ var shell = function (command) {
     );
 };
 
-
-
 // cleanup
 shell("rm -rf _module/application");
 shell("rm -rf _module/extend");
-shell("rm -rf _master/copy_this/modules/bla/bla-tprice");
+shell("rm -rf _master/copy_this/modules/"+p.vendor+"/"+p.name);
 console.log("");
 console.log("     cleanup finished");
-
-// oxversion
-//r('http://mb-dev.de/v/?raw=1&v=' + version).pipe(fs.createWriteStream('_module/version.jpg'));
 
 // copy files
 shell("cp -r application _module/application");
 shell("cp -r extend _module/extend");
 shell("cp metadata.php _module/metadata.php");
 shell("cp README.md _module/README.md");
+shell("cp LICENSE _module/LICENSE");
 console.log("     new files copied");
 
 // compile some files
 var replaces = {
+    'NAME': p.name,
     'MODULE': p.description,
     'VERSION': p.version+' '+new Date().toLocaleDateString(),
+    'VENDOR': p.vendor,
     'AUTHOR': p.author,
     'COMPANY': p.company,
     'EMAIL': p.email,
@@ -57,8 +55,8 @@ for(var x in replaces)
 process.on('exit', function (code) {
     console.log("     replacing complete");
     // copy module to master
-    shell("cp -r _module _master/copy_this/modules/bla/bla-tprice");
-    shell("rm -rf _master/copy_this/modules/bla/bla-tprice/.git");
+    shell("cp -r _module _master/copy_this/modules/"+p.vendor+"/"+p.name);
+    shell("rm -rf _master/copy_this/modules/"+p.vendor+"/"+p.name+".git");
     shell("cp _module/README.md _master/README.md");
     console.log("");
     console.log("     build complete! made my day!");
