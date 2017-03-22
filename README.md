@@ -20,7 +20,7 @@ Zusätzlich dazu wird der UVP Preis vom Vaterartikel genommen, sofern dieser üb
 **oder:**
 * $ cd modules/ 
 * $ mkidir bla && cd bla
-* $ wget https://raw.githubusercontent.com/vanilla-thunder/bla/master/vendormetadata.php
+* $ touch vendormetadata.php
 * $ git clone -b module https://github.com/vanilla-thunder/bla-tprice.git
 
 ### LICENSE AGREEMENT  
