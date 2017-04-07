@@ -19,7 +19,7 @@
 $sMetadataVersion = '1.1';
 $aModule          = array(
     'id'          => 'bla-tprice',
-    'title'       => '<strong style="color:#95b900;font-size:125%;">best</strong><strong style="color:#c4ca77;font-size:125%;">life</strong> <strong>TPrice</strong>',
+    'title'       => '<strong style="color:#95b900;font-size:125%;">best</strong><strong style="color:#c4ca77;font-size:125%;">life</strong> <strong>UVP Preis</strong>',
     'thumbnail'   => 'bestlife.png',
     'description' => '___MODULE___',
     'version'     => '___VERSION___',
