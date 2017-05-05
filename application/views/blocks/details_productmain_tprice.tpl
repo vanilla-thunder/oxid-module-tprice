@@ -1,4 +1,4 @@
-[{if $oDetailsProduct->getTPrice()}]
+[{if $oDetailsProduct->getTPrice() > $oDetailsProduct->getPrice() }]
     [{strip}]
         [{assign var="oTPrice" value=$oDetailsProduct->getTPrice()}]
         <div class="alert alert-success">
