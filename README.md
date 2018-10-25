@@ -1,7 +1,5 @@
-## ___MODULE___
-Version ___VERSION___
-
-### Beschreibung mit Bildern gibts hier: https://marat.ws/der-bessere-uvp-preis-fur-oxid-eshop/
+# [___VENDOR___] ___NAME___ - Module for OXID eShop 4.9+
+## version: ___VERSION___
 
 Mit diesem Modul können Sie für jedem Artikel die Überschrift beim UVP Preis ändern.
 * UVP des Herstellers
@@ -13,19 +11,18 @@ Mit diesem Modul können Sie für jedem Artikel die Überschrift beim UVP Preis 
 Sie können ebenfalls prezentuale als auch absolute Ersparnis gegenüber dem UVP Preis anzeigen lassen.  
 Zusätzlich dazu wird der UVP Preis vom Vaterartikel genommen, sofern dieser über dem Preis der Variante liegt.
 
-### Installation
-* [https://github.com/vanilla-thunder/bla-tprice/archive/master.zip](https://github.com/vanilla-thunder/bla-tprice/archive/master.zip) herunterladen und entpacken
+### Installation v4 / v5
+* [___URL___/archive/master.zip](___URL___/archive/master.zip) herunterladen und entpacken
 * Inhalt von "copy_this" in den Shop hochladen
+* Modul aktivieren und Moduleinstellungen konfigurieren
+* Views aktualisieren
 
-**oder:**
-* $ cd modules/ 
-* $ mkdir bla && cd bla
-* $ touch vendormetadata.php
-* $ git clone -b module https://github.com/vanilla-thunder/bla-tprice.git
+### Installation v6
+* steht noch nicht so ganz fest
 
-### LICENSE AGREEMENT  
-   ___MODULE___  
-   Copyright (C) ___YEAR___  ___COMPANY___  
+### LICENSE AGREEMENT
+   [___VENDOR___] ___NAME___ - Module for OXID eShop 4.9+  
+   Copyright (C) ___YEAR___ ___COMPANY___  
    info:  ___EMAIL___  
   
    This program is free software;  

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * [___VENDOR___] ___NAME___ - ___MODULE___
+ * [___VENDOR___] ___NAME___
  * Copyright (C) ___YEAR___  ___COMPANY___
  * info:  ___EMAIL___
  *
@@ -17,34 +17,37 @@
  */
 
 $sMetadataVersion = '1.1';
-$aModule          = array(
-    'id'          => 'bla-tprice',
-    'title'       => '<strong style="color:#95b900;font-size:125%;">best</strong><strong style="color:#c4ca77;font-size:125%;">life</strong> <strong>UVP Preis</strong>',
-    'thumbnail'   => 'bestlife.png',
-    'description' => '___MODULE___',
-    'version'     => '___VERSION___',
-    'author'      => '___AUTHOR___',
-    'email'       => '___EMAIL___',
-    'url'         => '___URL___',
-    'extend'      => array(
-        'oxarticle' => 'bla/bla-tprice/extend/bla_tprice_oxarticle'
-    ),
-    'files'       => array(
-        'bla_tprice' => 'bla/bla-tprice/application/bla_tprice.php',
-    ),
-    'events'      => array(
-        'onActivate'   => 'bla_tprice::install',
-    ),
-    'blocks'      => array(
-        array(
-            'template' => 'page/details/inc/productmain.tpl',
-            'block'    => 'details_productmain_tprice',
-            'file'     => '/application/views/blocks/details_productmain_tprice.tpl'
-        ),
-        array(
-            'template' => 'article_extend.tpl',
-            'block'    => 'admin_article_extend_form',
-            'file'     => '/application/views/blocks/admin_article_extend_form.tpl'
-        )
-    )
-);
+$aModule = [
+	'id'          => 'tprice',
+	'title'       => [
+		'de' => '[vt] UVP Preis',
+		'en' => '[vt] TPrice'
+	],
+	'description' => '___DESCRIPTION___',
+	'thumbnail'   => '',
+	'version'     => '___VERSION___',
+	'author'      => '___AUTHOR___',
+	'email'       => '___EMAIL___',
+	'url'         => '___URL___',
+	'extend'      => [
+		'oxarticle' => 'vt/tprice/application/extend/oxarticleVtTprice'
+	],
+	'files'       => [
+		'vt_tprice' => 'vt/tprice/application/vt_tprice.php',
+	],
+	'events'      => [
+		'onActivate' => 'vt_tprice::install',
+	],
+	'blocks'      => [
+		[
+			'template' => 'page/details/inc/productmain.tpl',
+			'block'    => 'details_productmain_tprice',
+			'file'     => '/application/views/blocks/details_productmain_tprice.tpl'
+		],
+		[
+			'template' => 'article_extend.tpl',
+			'block'    => 'admin_article_extend_form',
+			'file'     => '/application/views/blocks/admin_article_extend_form.tpl'
+		]
+	]
+];

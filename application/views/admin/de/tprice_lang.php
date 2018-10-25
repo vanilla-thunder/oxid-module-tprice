@@ -20,10 +20,10 @@ $sLangName = 'Deutsch';
 $aLang     = array(
     'charset'                    => 'UTF-8',
     'ARTICLE_EXTEND_TPRICE'      => 'Statt-Preis',
-    'BLA_TPRICE_OLD'             => 'alter Preis',
+    'VT_TPRICE_OLD'             => 'alter Preis',
     'HELP_ARTICLE_EXTEND_BPRICE' => 'bei "Einführungspreis" wird der aktuelle Preis als Einführungspreis definiert und der Statt-Preis als "regulärer Preis"',
-    'BLA_TPRICE_REGULAR'         => 'regulärer Preis',
-    'BLA_TPRICE_INTRO'           => 'Einführungspreis',
-    'BLA_TPRICE_RRP'             => 'UVP',
-    'BLA_TPRICE_EXRRP'           => 'ehem. UVP'
+    'VT_TPRICE_REGULAR'         => 'regulärer Preis',
+    'VT_TPRICE_INTRO'           => 'Einführungspreis',
+    'VT_TPRICE_RRP'             => 'UVP',
+    'VT_TPRICE_EXRRP'           => 'ehem. UVP'
 );

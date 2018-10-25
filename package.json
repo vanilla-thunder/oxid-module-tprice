@@ -1,25 +1,31 @@
 {
-  "name": "bla-tprice",
-  "version": "0.1.3",
-  "description": "enhanced TPrice for OXID eShop CE",
-  "vendor":"bla",
+  "name": "tprice",
+  "version": "2.0.0",
+  "description": "enhanced TPrice (RRP) for OXID eShop CE",
   "author": "Marat Bedoev",
-  "company": "bestlife AG",
-  "email": "oxid@bestlife.ag",
-  "url": "https://github.com/vanilla-thunder/bla-tprice",
+  "email": "schwarzarbyter@gmail.com",
+  "vendor": "vt",
+  "company": "Marat Bedoev",
+  "url": "https://github.com/vanilla-thunder/oxid-module-tprice",
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/vanilla-thunder/bla-tprice.git"
+    "url": "https://github.com/vanilla-thunder/oxid-module-tprice.git"
   },
   "bugs": {
-    "url": "https://github.com/vanilla-thunder/bla-tprice/issues"
+    "url": "https://github.com/vanilla-thunder/oxid-module-tprice/issues"
   },
   "keywords": [
-    "tprice",
-    "oxid"
+    "oxid",
+    "tprice"
   ],
   "dependencies": {
+    "fs-extra": "*",
     "replace": "*"
+  },
+  "scripts": {
+    "init": "node scripts.js init",
+    "build": "node scripts.js build",
+    "publish": "node scripts.js publish"
   }
 }

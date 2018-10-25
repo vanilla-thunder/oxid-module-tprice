@@ -1,7 +1,7 @@
 <?php
 
 /**
- * [___VENDOR___] ___NAME___ - ___MODULE___
+ * [___VENDOR___] ___NAME___
  * Copyright (C) ___YEAR___  ___COMPANY___
  * info:  ___EMAIL___
  *
@@ -16,7 +16,7 @@
  * author: ___AUTHOR___
  */
 
-class bla_tprice_oxarticle extends bla_tprice_oxarticle_parent
+class oxarticleVtTprice extends oxarticleVtTprice_parent
 {
     public function getTPrice()
     {
@@ -27,9 +27,9 @@ class bla_tprice_oxarticle extends bla_tprice_oxarticle_parent
     public function getTPriceType()
     {
         // UVP, ehemaliger UVP, unser alter Preis, regulärer preis (+ der neue Einführungspreis)
-        if ($this->oxarticles__blatpricetype->value == '') return "BLA_TPRICE_OLD";
+        if ($this->oxarticles__vttpricetype->value == '') return "VT_TPRICE_OLD";
 
-        return "BLA_TPRICE_" . $this->oxarticles__blatpricetype->value;
+        return "VT_TPRICE_" . $this->oxarticles__vttpricetype->value;
     }
 
     public function getSaving()
