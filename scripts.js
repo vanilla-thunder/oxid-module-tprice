@@ -34,8 +34,9 @@ else if (mode === "build") {
     console.log("copying new files...");
     try {
         fs.copySync('application', '_module/application');
-        fs.copySync('LICENSE', '_module/LICENSE');
         fs.copySync('metadata.php', '_module/metadata.php');
+        fs.copySync('composer.json', '_module/composer.json');
+        fs.copySync('LICENSE', '_module/LICENSE');
         fs.copySync('README.md', '_module/README.md');
     } catch (err) {
         console.log("FAILED: ", err);

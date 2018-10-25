@@ -1,0 +1,14 @@
+{
+  "name": "___VENDOR___/___NAME___",
+  "description": "___DESCRIPTION___",
+  "version":"___VERSION___",
+  "type": "oxideshop-module",
+  "keywords": ["oxid", "module"],
+  "homepage": "___URL___",
+  "license": [ "GPL-3.0" ],
+  "extra": {
+    "oxideshop": {
+      "target-directory": "___VENDOR___/___NAME___"
+    }
+  }
+}

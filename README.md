@@ -1,5 +1,5 @@
-# [___VENDOR___] ___NAME___ - Module for OXID eShop 4.9+
-## version: ___VERSION___
+## [___VENDOR___] ___NAME___ - Module for OXID eShop 4.9+
+version: ___VERSION___
 
 Mit diesem Modul können Sie für jedem Artikel die Überschrift beim UVP Preis ändern.
 * UVP des Herstellers
@@ -15,10 +15,10 @@ Zusätzlich dazu wird der UVP Preis vom Vaterartikel genommen, sofern dieser üb
 * [___URL___/archive/master.zip](___URL___/archive/master.zip) herunterladen und entpacken
 * Inhalt von "copy_this" in den Shop hochladen
 * Modul aktivieren und Moduleinstellungen konfigurieren
-* Views aktualisieren
+* Views aktualisieren + tmp/ leeren
 
 ### Installation v6
-* steht noch nicht so ganz fest
+* ``$ wget ___URL___/archive/module.zip -O ___VENDOR___-___NAME___``
 
 ### LICENSE AGREEMENT
    [___VENDOR___] ___NAME___ - Module for OXID eShop 4.9+  
