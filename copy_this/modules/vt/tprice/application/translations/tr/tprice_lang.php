@@ -1,9 +1,9 @@
 <?php
 
 /**
- * [bla] bla-tprice - enhanced TPrice for OXID eShop CE
- * Copyright (C) 2017  bestlife AG
- * info:  oxid@bestlife.ag
+ * [vt] tprice
+ * Copyright (C) 2018  Marat Bedoev
+ * info:  schwarzarbyter@gmail.com
  *
  * This program is free software;
  * you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation;
@@ -16,14 +16,17 @@
  * author: Marat Bedoev
  */
 
-$sLangName = 'Deutsch';
+$sLangName  = 'Türkçe';
 $aLang     = array(
     'charset'                    => 'UTF-8',
-    'ARTICLE_EXTEND_TPRICE'      => 'Statt-Preis',
-    'BLA_TPRICE_OLD'             => 'alter Preis',
-    'HELP_ARTICLE_EXTEND_BPRICE' => 'bei "Einführungspreis" wird der aktuelle Preis als Einführungspreis definiert und der Statt-Preis als "regulärer Preis"',
-    'BLA_TPRICE_REGULAR'         => 'regulärer Preis',
-    'BLA_TPRICE_INTRO'           => 'Einführungspreis',
-    'BLA_TPRICE_RRP'             => 'UVP',
-    'BLA_TPRICE_EXRRP'           => 'ehem. UVP'
+    'VT_TPRICE_OLD'             => 'Eski Fiyatımız',
+    'VT_TPRICE_RRP'             => 'Tavsiye Edilen Perakende Satış Fiyatı',
+    'VT_TPRICE_EXRRP'           => 'Eski Perakende Satış Fiyatı',
+    'VT_TPRICE_REGULAR'         => 'Genel Fiyatımız',
+    'VT_TPRICE_INTRO'           => 'Genel Fiyatımız',
+    'VT_TPRICE_INTRODUCTION_PRICE' => 'Kampanya Fiyatı',
+    'VT_TPRICE_OFFER_LIMITED'   => 'Sınırlı Teklif!',
+    'VT_TPRICE_YOU_SAVE'        => 'Tasarruf Edin',
+    'VT_TPRICE_UP_TO'           => 'e/a kadar',
+    'VT_TPRICE_PERCENT_CHEAPER' => '%s%% daha cazip',
 );

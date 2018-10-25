@@ -1,9 +1,9 @@
 <?php
 
 /**
- * [bla] bla-tprice - enhanced TPrice for OXID eShop CE
- * Copyright (C) 2017  bestlife AG
- * info:  oxid@bestlife.ag
+ * [vt] tprice
+ * Copyright (C) 2018  Marat Bedoev
+ * info:  schwarzarbyter@gmail.com
  *
  * This program is free software;
  * you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation;
@@ -19,11 +19,14 @@
 $sLangName = 'Deutsch';
 $aLang     = array(
     'charset'                    => 'UTF-8',
-    'ARTICLE_EXTEND_TPRICE'      => 'old price',
-    'BLA_TPRICE_OLD'             => 'former price',
-    'HELP_ARTICLE_EXTEND_BPRICE' => 'when selecting "introductory price", the current price will be displayed as "introductory price" and the retail price as "regular price"',
-    'BLA_TPRICE_REGULAR'         => 'regular price',
-    'BLA_TPRICE_INTRO'           => 'introductory price',
-    'BLA_TPRICE_RRP'             => 'list price',
-    'BLA_TPRICE_EXRRP'           => 'former list price'
+    'VT_TPRICE_OLD'             => 'former price',
+    'VT_TPRICE_RRP'             => 'list price',
+    'VT_TPRICE_EXRRP'           => 'former list price',
+    'VT_TPRICE_REGULAR'         => 'regular price',
+    'VT_TPRICE_INTRO'           => 'regular price',
+    'VT_TPRICE_INTRODUCTION_PRICE' => 'Introductroy Price',
+    'VT_TPRICE_OFFER_LIMITED'   => 'Limited time offer!',
+    'VT_TPRICE_YOU_SAVE'        => 'You save',
+    'VT_TPRICE_UP_TO'           => 'up to',
+    'VT_TPRICE_PERCENT_CHEAPER' => '%s%% cheaper',
 );

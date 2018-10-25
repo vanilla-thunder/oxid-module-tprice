@@ -1,9 +1,9 @@
 <?php
 
 /**
- * [bla] bla-tprice - enhanced TPrice for OXID eShop CE
- * Copyright (C) 2017  bestlife AG
- * info:  oxid@bestlife.ag
+ * [vt] tprice
+ * Copyright (C) 2018  Marat Bedoev
+ * info:  schwarzarbyter@gmail.com
  *
  * This program is free software;
  * you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation;
@@ -16,7 +16,7 @@
  * author: Marat Bedoev
  */
 
-class bla_tprice_oxarticle extends bla_tprice_oxarticle_parent
+class oxarticleVtTprice extends oxarticleVtTprice_parent
 {
     public function getTPrice()
     {
@@ -27,9 +27,9 @@ class bla_tprice_oxarticle extends bla_tprice_oxarticle_parent
     public function getTPriceType()
     {
         // UVP, ehemaliger UVP, unser alter Preis, regulärer preis (+ der neue Einführungspreis)
-        if ($this->oxarticles__blatpricetype->value == '') return "BLA_TPRICE_OLD";
+        if ($this->oxarticles__vttpricetype->value == '') return "VT_TPRICE_OLD";
 
-        return "BLA_TPRICE_" . $this->oxarticles__blatpricetype->value;
+        return "VT_TPRICE_" . $this->oxarticles__vttpricetype->value;
     }
 
     public function getSaving()

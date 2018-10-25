@@ -5,11 +5,11 @@
             <h4>
                 <b>
                     [{* bei Preisen "Ab ...€" kommt "bis zu XY%" *}]
-                    [{if $oDetailsProduct->isParentNotBuyable() && $oDetailsProduct->isRangePrice() }][{oxmultilang ident="BLA_TPRICE_UP_TO"}] [{/if}]
+                    [{if $oDetailsProduct->isParentNotBuyable() && $oDetailsProduct->isRangePrice() }][{oxmultilang ident="VT_TPRICE_UP_TO"}] [{/if}]
                     [{* XY% günstiger *}]
-                    [{oxmultilang ident="BLA_TPRICE_PERCENT_CHEAPER" args=$oDetailsProduct->getSavingPercent()}] : </b>
+                    [{oxmultilang ident="VT_TPRICE_PERCENT_CHEAPER" args=$oDetailsProduct->getSavingPercent()}] : </b>
                 [{* Sie sparen XY € *}]
-                [{oxmultilang ident="BLA_TPRICE_YOU_SAVE"}] [{oxprice price=$oDetailsProduct->getSaving() currency=$currency}]
+                [{oxmultilang ident="VT_TPRICE_YOU_SAVE"}] [{oxprice price=$oDetailsProduct->getSaving() currency=$currency}]
             </h4>
             <div>
                 [{* Statt-Preis *}]
@@ -19,11 +19,11 @@
 
             </div>
         </div>
-        [{if $oDetailsProduct->getTPriceType() == 'BLA_TPRICE_INTRO'}]
+        [{if $oDetailsProduct->getTPriceType() == 'VT_TPRICE_INTRO'}]
             [{* Angebot nur für begrenzte zeit *}]
-            <b class="text-warning">[{oxmultilang ident="BLA_TPRICE_OFFER_LIMITED"}]</b><br/>
+            <b class="text-warning">[{oxmultilang ident="VT_TPRICE_OFFER_LIMITED"}]</b><br/>
             [{* Einführungspreis *}]
-            <b class="h3 text-success">[{oxmultilang ident="BLA_TPRICE_INTRODUCTION_PRICE" suffix="COLON"}]</b>
+            <b class="h3 text-success">[{oxmultilang ident="VT_TPRICE_INTRODUCTION_PRICE" suffix="COLON"}]</b>
         [{/if}]
     [{/strip}]
 [{/if}]
