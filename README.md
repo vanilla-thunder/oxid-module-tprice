@@ -1,7 +1,5 @@
-## enhanced TPrice for OXID eShop CE
-Version 0.1.3 2017-3-22
-
-### Beschreibung mit Bildern gibts hier: https://marat.ws/der-bessere-uvp-preis-fur-oxid-eshop/
+# [vt] tprice - Module for OXID eShop 4.9+
+## version: 2.0.0 ( 2018-10-25 )
 
 Mit diesem Modul können Sie für jedem Artikel die Überschrift beim UVP Preis ändern.
 * UVP des Herstellers
@@ -13,20 +11,19 @@ Mit diesem Modul können Sie für jedem Artikel die Überschrift beim UVP Preis 
 Sie können ebenfalls prezentuale als auch absolute Ersparnis gegenüber dem UVP Preis anzeigen lassen.  
 Zusätzlich dazu wird der UVP Preis vom Vaterartikel genommen, sofern dieser über dem Preis der Variante liegt.
 
-### Installation
-* [https://github.com/vanilla-thunder/bla-tprice/archive/master.zip](https://github.com/vanilla-thunder/bla-tprice/archive/master.zip) herunterladen und entpacken
+### Installation v4 / v5
+* [https://github.com/vanilla-thunder/oxid-module-tprice/archive/master.zip](https://github.com/vanilla-thunder/oxid-module-tprice/archive/master.zip) herunterladen und entpacken
 * Inhalt von "copy_this" in den Shop hochladen
+* Modul aktivieren und Moduleinstellungen konfigurieren
+* Views aktualisieren
 
-**oder:**
-* $ cd modules/ 
-* $ mkdir bla && cd bla
-* $ touch vendormetadata.php
-* $ git clone -b module https://github.com/vanilla-thunder/bla-tprice.git
+### Installation v6
+* steht noch nicht so ganz fest
 
-### LICENSE AGREEMENT  
-   enhanced TPrice for OXID eShop CE  
-   Copyright (C) 2017  bestlife AG  
-   info:  oxid@bestlife.ag  
+### LICENSE AGREEMENT
+   [vt] tprice - Module for OXID eShop 4.9+  
+   Copyright (C) 2018 Marat Bedoev  
+   info:  schwarzarbyter@gmail.com  
   
    This program is free software;  
    you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation;

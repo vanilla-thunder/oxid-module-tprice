@@ -1,9 +1,9 @@
 <?php
 
 /**
- * [bla] bla-tprice - enhanced TPrice for OXID eShop CE
- * Copyright (C) 2017  bestlife AG
- * info:  oxid@bestlife.ag
+ * [vt] tprice
+ * Copyright (C) 2018  Marat Bedoev
+ * info:  schwarzarbyter@gmail.com
  *
  * This program is free software;
  * you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation;
@@ -17,34 +17,37 @@
  */
 
 $sMetadataVersion = '1.1';
-$aModule          = array(
-    'id'          => 'bla-tprice',
-    'title'       => '<strong style="color:#95b900;font-size:125%;">best</strong><strong style="color:#c4ca77;font-size:125%;">life</strong> <strong>TPrice</strong>',
-    'thumbnail'   => 'bestlife.png',
-    'description' => 'enhanced TPrice for OXID eShop CE',
-    'version'     => '0.1.3 2017-3-22',
-    'author'      => 'Marat Bedoev',
-    'email'       => 'oxid@bestlife.ag',
-    'url'         => 'https://github.com/vanilla-thunder/bla-tprice',
-    'extend'      => array(
-        'oxarticle' => 'bla/bla-tprice/extend/bla_tprice_oxarticle'
-    ),
-    'files'       => array(
-        'bla_tprice' => 'bla/bla-tprice/application/bla_tprice.php',
-    ),
-    'events'      => array(
-        'onActivate'   => 'bla_tprice::install',
-    ),
-    'blocks'      => array(
-        array(
-            'template' => 'page/details/inc/productmain.tpl',
-            'block'    => 'details_productmain_tprice',
-            'file'     => '/application/views/blocks/details_productmain_tprice.tpl'
-        ),
-        array(
-            'template' => 'article_extend.tpl',
-            'block'    => 'admin_article_extend_form',
-            'file'     => '/application/views/blocks/admin_article_extend_form.tpl'
-        )
-    )
-);
+$aModule = [
+	'id'          => 'tprice',
+	'title'       => [
+		'de' => '[vt] UVP Preis',
+		'en' => '[vt] TPrice'
+	],
+	'description' => 'enhanced TPrice (RRP) for OXID eShop CE',
+	'thumbnail'   => '',
+	'version'     => '2.0.0 ( 2018-10-25 )',
+	'author'      => 'Marat Bedoev',
+	'email'       => 'schwarzarbyter@gmail.com',
+	'url'         => 'https://github.com/vanilla-thunder/oxid-module-tprice',
+	'extend'      => [
+		'oxarticle' => 'vt/tprice/application/extend/oxarticleVtTprice'
+	],
+	'files'       => [
+		'vt_tprice' => 'vt/tprice/application/vt_tprice.php',
+	],
+	'events'      => [
+		'onActivate' => 'vt_tprice::install',
+	],
+	'blocks'      => [
+		[
+			'template' => 'page/details/inc/productmain.tpl',
+			'block'    => 'details_productmain_tprice',
+			'file'     => '/application/views/blocks/details_productmain_tprice.tpl'
+		],
+		[
+			'template' => 'article_extend.tpl',
+			'block'    => 'admin_article_extend_form',
+			'file'     => '/application/views/blocks/admin_article_extend_form.tpl'
+		]
+	]
+];
