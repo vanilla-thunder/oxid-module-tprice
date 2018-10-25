@@ -1,5 +1,5 @@
-# [vt] tprice - Module for OXID eShop 4.9+
-## version: 2.0.0 ( 2018-10-25 )
+## [vt] tprice - Module for OXID eShop 4.9+
+version: 2.0.0 ( 2018-10-25 )
 
 Mit diesem Modul können Sie für jedem Artikel die Überschrift beim UVP Preis ändern.
 * UVP des Herstellers
@@ -15,10 +15,10 @@ Zusätzlich dazu wird der UVP Preis vom Vaterartikel genommen, sofern dieser üb
 * [https://github.com/vanilla-thunder/oxid-module-tprice/archive/master.zip](https://github.com/vanilla-thunder/oxid-module-tprice/archive/master.zip) herunterladen und entpacken
 * Inhalt von "copy_this" in den Shop hochladen
 * Modul aktivieren und Moduleinstellungen konfigurieren
-* Views aktualisieren
+* Views aktualisieren + tmp/ leeren
 
 ### Installation v6
-* steht noch nicht so ganz fest
+* ``$ wget https://github.com/vanilla-thunder/oxid-module-tprice/archive/module.zip -O vt-tprice``
 
 ### LICENSE AGREEMENT
    [vt] tprice - Module for OXID eShop 4.9+  

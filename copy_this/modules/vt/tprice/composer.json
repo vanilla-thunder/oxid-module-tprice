@@ -1,0 +1,13 @@
+{
+  "name": "vt/tprice",
+  "description": "enhanced TPrice (RRP) for OXID eShop CE",
+  "type": "oxideshop-module",
+  "keywords": ["oxid", "module"],
+  "homepage": "https://github.com/vanilla-thunder/oxid-module-tprice",
+  "license": [ "GPL-3.0" ],
+  "extra": {
+    "oxideshop": {
+      "target-directory": "vt/tprice"
+    }
+  }
+}
