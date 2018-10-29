@@ -1,4 +1,4 @@
-## [___VENDOR___] ___NAME___ - Module for OXID eShop 4.9+
+## [___VENDOR___] ___NAME___ - Module for OXID eShop v6
 version: ___VERSION___
 
 Mit diesem Modul können Sie für jedem Artikel die Überschrift beim UVP Preis ändern.
@@ -12,13 +12,27 @@ Sie können ebenfalls prezentuale als auch absolute Ersparnis gegenüber dem UVP
 Zusätzlich dazu wird der UVP Preis vom Vaterartikel genommen, sofern dieser über dem Preis der Variante liegt.
 
 ### Installation v4 / v5
-* [___URL___/archive/master.zip](___URL___/archive/master.zip) herunterladen und entpacken
+* [___URL___/archive/master.zip](___URL___/archive/v4.zip) herunterladen und entpacken
 * Inhalt von "copy_this" in den Shop hochladen
 * Modul aktivieren und Moduleinstellungen konfigurieren
-* Views aktualisieren + tmp/ leeren
+* tmp/ leeren + Views aktualisieren
 
 ### Installation v6
-* ``$ wget ___URL___/archive/module.zip -O ___VENDOR___-___NAME___``
+* meine private repository in composer.json eintragen/ergänzen:
+````
+"repositories": [
+   {
+      "type": "composer",
+      "url": "https://raw.githubusercontent.com/vanilla-thunder/composer/master/"
+   }
+],
+* Modul dependency eintragen:
+````
+"require": {
+   "vt/tprice":"dev-module"
+},
+```` 
+* ``$ composer require vt/tprice:dev-module``
 
 ### LICENSE AGREEMENT
    [___VENDOR___] ___NAME___ - Module for OXID eShop 4.9+  

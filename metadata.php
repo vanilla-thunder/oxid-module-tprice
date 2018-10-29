@@ -33,10 +33,10 @@ $aModule = [
 		'oxarticle' => 'vt/tprice/application/extend/oxarticleVtTprice'
 	],
 	'files'       => [
-		'vt_tprice' => 'vt/tprice/application/vt_tprice.php',
+		'vt_tprice_events' => 'vt/tprice/application/vt_tprice_events.php',
 	],
 	'events'      => [
-		'onActivate' => 'vt_tprice::install',
+		'onActivate' => 'vt_tprice_events::install',
 	],
 	'blocks'      => [
 		[
