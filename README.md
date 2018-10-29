@@ -23,7 +23,7 @@ Zusätzlich dazu wird der UVP Preis vom Vaterartikel genommen, sofern dieser üb
 "repositories": [
    {
       "type": "composer",
-      "url": "https://raw.githubusercontent.com/vanilla-thunder/composer/master/"
+      "url": "https://satis.mb-dev.pro/"
    }
 ],
 ````

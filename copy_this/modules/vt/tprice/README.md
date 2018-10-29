@@ -23,14 +23,14 @@ Zusätzlich dazu wird der UVP Preis vom Vaterartikel genommen, sofern dieser üb
 "repositories": [
    {
       "type": "composer",
-      "url": "https://raw.githubusercontent.com/vanilla-thunder/composer/master/"
+      "url": "https://satis.mb-dev.pro/"
    }
 ],
 ````
 * ``$ composer require vt/tprice:dev-module --update-no-dev``
 
 ### LICENSE AGREEMENT
-   [vt] tprice - Module for OXID eShop 4.9+  
+   [vt] tprice - Module for OXID eShop v6  
    Copyright (C) 2018 Marat Bedoev  
    info:  schwarzarbyter@gmail.com  
   
