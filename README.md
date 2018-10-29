@@ -34,7 +34,7 @@ Zusätzlich dazu wird der UVP Preis vom Vaterartikel genommen, sofern dieser üb
    "vt/tprice":"dev-module"
 },
 ```` 
-* bzw: ``$ composer require vt/tprice:dev-module``
+* bzw: ``$ composer require vt/tprice:dev-module --no-update && composer update vt/tprice --``
 
 ### LICENSE AGREEMENT
    [___VENDOR___] ___NAME___ - Module for OXID eShop 4.9+  
