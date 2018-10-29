@@ -6,6 +6,10 @@
   "keywords": ["oxid", "module"],
   "homepage": "___URL___",
   "license": [ "GPL-3.0" ],
+  "require": {
+    "php": ">=5.6",
+    "oxid-esales/oxideshop-ce": "^v6.0"
+  },
   "extra": {
     "oxideshop": {
       "target-directory": "___VENDOR___/___NAME___"

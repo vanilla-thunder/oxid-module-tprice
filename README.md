@@ -26,13 +26,15 @@ Zusätzlich dazu wird der UVP Preis vom Vaterartikel genommen, sofern dieser üb
       "url": "https://raw.githubusercontent.com/vanilla-thunder/composer/master/"
    }
 ],
-* Modul dependency eintragen:
+````
+* Dependency eintragen:
 ````
 "require": {
+   ...
    "vt/tprice":"dev-module"
 },
 ```` 
-* ``$ composer require vt/tprice:dev-module``
+* bzw: ``$ composer require vt/tprice:dev-module``
 
 ### LICENSE AGREEMENT
    [___VENDOR___] ___NAME___ - Module for OXID eShop 4.9+  
