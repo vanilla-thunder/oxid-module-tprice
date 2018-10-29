@@ -25,7 +25,7 @@ $aModule = [
 	],
 	'description' => 'enhanced TPrice (RRP) for OXID eShop CE',
 	'thumbnail'   => '',
-	'version'     => '2.0.0 ( 2018-10-25 )',
+	'version'     => '2.0.0 ( 2018-10-29 )',
 	'author'      => 'Marat Bedoev',
 	'email'       => 'schwarzarbyter@gmail.com',
 	'url'         => 'https://github.com/vanilla-thunder/oxid-module-tprice',
@@ -33,10 +33,10 @@ $aModule = [
 		'oxarticle' => 'vt/tprice/application/extend/oxarticleVtTprice'
 	],
 	'files'       => [
-		'vt_tprice' => 'vt/tprice/application/vt_tprice.php',
+		'vt_tprice_events' => 'vt/tprice/application/vt_tprice_events.php',
 	],
 	'events'      => [
-		'onActivate' => 'vt_tprice::install',
+		'onActivate' => 'vt_tprice_events::install',
 	],
 	'blocks'      => [
 		[
