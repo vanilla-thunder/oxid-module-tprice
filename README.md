@@ -18,7 +18,7 @@ Zusätzlich dazu wird der UVP Preis vom Vaterartikel genommen, sofern dieser üb
 * tmp/ leeren + Views aktualisieren
 
 ### Installation v6
-* ``$ composer require -n vanilla-thunder/oxid-module-tprice``
+* ``composer require -n vanilla-thunder/oxid-module-tprice``
 
 ### LICENSE AGREEMENT
    [vt] tprice - Module for OXID eShop 4.9+  
