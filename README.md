@@ -18,16 +18,7 @@ Zusätzlich dazu wird der UVP Preis vom Vaterartikel genommen, sofern dieser üb
 * tmp/ leeren + Views aktualisieren
 
 ### Installation v6
-* meine private repository in composer.json eintragen/ergänzen:
-````
-"repositories": [
-   {
-      "type": "composer",
-      "url": "https://raw.githubusercontent.com/vanilla-thunder/composer/master/"
-   }
-],
-````
-* ``$ composer require vt/tprice:dev-module --update-no-dev``
+* ``$ composer require -n vanilla-thunder/oxid-module-tprice``
 
 ### LICENSE AGREEMENT
    [vt] tprice - Module for OXID eShop 4.9+  
